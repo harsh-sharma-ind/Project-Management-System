@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Project Management Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Project Management Form</h2>
+        <form id="empForm" method="post">
+            <div class="form-group">
+                <span><label for="empId">Project ID:</label> <label id="empIdMsg">
+                    </label></span>
+                <input type="text" class="form-control" name="empId" id="empId" placeholder="Enter Project ID" required onchange="getEmp();">
+            </div>
+
+            <div class="form-group">
+                <label for="empName">Project Name:</label>
+                <input type="text" class="form-control" id="empName" placeholder="Enter Project Name" name="empName">
+            </div>
+
+            <div class="form-group">
+                <label for="empEmail">Assigned to:</label>
+                <input type="text" class="form-control" id="empEmail"
+                    placeholder="Enter name of a person to which project is assigned" name="empEmail">
+            </div>
+
+            <div class="form-group">
+                <label for="empDate">Assignment Date:</label>
+                <input type="text" class="form-control" id="empDate" placeholder="Enter Assignment Date" name="empDate">
+            </div>
+
+            <div class="form-group">
+                <label for="empDead">Deadline:</label>
+                <input type="text" class="form-control" id="empDead" placeholder="Enter Deadline" name="empDead">
+            </div>
+
+
+            <input type="button" class="btn btn-primary" id="empSave" value="Save" onclick="saveEmployee();" disabled>
+            <input type="button" class="btn btn-primary" id="empChange" value="Update"  onclick="changeData();" disabled>
+            <input type="button" class="btn btn-primary" id="empReset" value="Reset" onclick="resetForm();" disabled>
+        </form>
+    </div>
+
+  
+
+    
+</body>
+<script src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+<script src="micro.js"></script>
+</html>
